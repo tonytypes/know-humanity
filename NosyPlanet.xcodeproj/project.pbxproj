@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		195E23FD1ABD391400962D34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195E23FC1ABD391400962D34 /* AppDelegate.swift */; };
+		195E23FF1ABD391400962D34 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195E23FE1ABD391400962D34 /* ViewController.swift */; };
+		195E24021ABD391400962D34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 195E24001ABD391400962D34 /* Main.storyboard */; };
+		195E24041ABD391400962D34 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 195E24031ABD391400962D34 /* Images.xcassets */; };
+		195E24071ABD391400962D34 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 195E24051ABD391400962D34 /* LaunchScreen.xib */; };
+		195E24131ABD391400962D34 /* NosyPlanetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195E24121ABD391400962D34 /* NosyPlanetTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		195E240D1ABD391400962D34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 195E23EF1ABD391400962D34 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 195E23F61ABD391400962D34;
+			remoteInfo = NosyPlanet;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		195E23F71ABD391400962D34 /* NosyPlanet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NosyPlanet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		195E23FB1ABD391400962D34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		195E23FC1ABD391400962D34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		195E23FE1ABD391400962D34 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		195E24011ABD391400962D34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		195E24031ABD391400962D34 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		195E24061ABD391400962D34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		195E240C1ABD391400962D34 /* NosyPlanetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NosyPlanetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		195E24111ABD391400962D34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		195E24121ABD391400962D34 /* NosyPlanetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NosyPlanetTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		195E23F41ABD391400962D34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		195E24091ABD391400962D34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		195E23EE1ABD391300962D34 = {
+			isa = PBXGroup;
+			children = (
+				195E23F91ABD391400962D34 /* NosyPlanet */,
+				195E240F1ABD391400962D34 /* NosyPlanetTests */,
+				195E23F81ABD391400962D34 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		195E23F81ABD391400962D34 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				195E23F71ABD391400962D34 /* NosyPlanet.app */,
+				195E240C1ABD391400962D34 /* NosyPlanetTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		195E23F91ABD391400962D34 /* NosyPlanet */ = {
+			isa = PBXGroup;
+			children = (
+				195E23FC1ABD391400962D34 /* AppDelegate.swift */,
+				195E23FE1ABD391400962D34 /* ViewController.swift */,
+				195E24001ABD391400962D34 /* Main.storyboard */,
+				195E24031ABD391400962D34 /* Images.xcassets */,
+				195E24051ABD391400962D34 /* LaunchScreen.xib */,
+				195E23FA1ABD391400962D34 /* Supporting Files */,
+			);
+			path = NosyPlanet;
+			sourceTree = "<group>";
+		};
+		195E23FA1ABD391400962D34 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				195E23FB1ABD391400962D34 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		195E240F1ABD391400962D34 /* NosyPlanetTests */ = {
+			isa = PBXGroup;
+			children = (
+				195E24121ABD391400962D34 /* NosyPlanetTests.swift */,
+				195E24101ABD391400962D34 /* Supporting Files */,
+			);
+			path = NosyPlanetTests;
+			sourceTree = "<group>";
+		};
+		195E24101ABD391400962D34 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				195E24111ABD391400962D34 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		195E23F61ABD391400962D34 /* NosyPlanet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 195E24161ABD391400962D34 /* Build configuration list for PBXNativeTarget "NosyPlanet" */;
+			buildPhases = (
+				195E23F31ABD391400962D34 /* Sources */,
+				195E23F41ABD391400962D34 /* Frameworks */,
+				195E23F51ABD391400962D34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NosyPlanet;
+			productName = NosyPlanet;
+			productReference = 195E23F71ABD391400962D34 /* NosyPlanet.app */;
+			productType = "com.apple.product-type.application";
+		};
+		195E240B1ABD391400962D34 /* NosyPlanetTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 195E24191ABD391400962D34 /* Build configuration list for PBXNativeTarget "NosyPlanetTests" */;
+			buildPhases = (
+				195E24081ABD391400962D34 /* Sources */,
+				195E24091ABD391400962D34 /* Frameworks */,
+				195E240A1ABD391400962D34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				195E240E1ABD391400962D34 /* PBXTargetDependency */,
+			);
+			name = NosyPlanetTests;
+			productName = NosyPlanetTests;
+			productReference = 195E240C1ABD391400962D34 /* NosyPlanetTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		195E23EF1ABD391400962D34 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "Tony Ruiz";
+				TargetAttributes = {
+					195E23F61ABD391400962D34 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					195E240B1ABD391400962D34 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 195E23F61ABD391400962D34;
+					};
+				};
+			};
+			buildConfigurationList = 195E23F21ABD391400962D34 /* Build configuration list for PBXProject "NosyPlanet" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 195E23EE1ABD391300962D34;
+			productRefGroup = 195E23F81ABD391400962D34 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				195E23F61ABD391400962D34 /* NosyPlanet */,
+				195E240B1ABD391400962D34 /* NosyPlanetTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		195E23F51ABD391400962D34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				195E24021ABD391400962D34 /* Main.storyboard in Resources */,
+				195E24071ABD391400962D34 /* LaunchScreen.xib in Resources */,
+				195E24041ABD391400962D34 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		195E240A1ABD391400962D34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		195E23F31ABD391400962D34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				195E23FF1ABD391400962D34 /* ViewController.swift in Sources */,
+				195E23FD1ABD391400962D34 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		195E24081ABD391400962D34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				195E24131ABD391400962D34 /* NosyPlanetTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		195E240E1ABD391400962D34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 195E23F61ABD391400962D34 /* NosyPlanet */;
+			targetProxy = 195E240D1ABD391400962D34 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		195E24001ABD391400962D34 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				195E24011ABD391400962D34 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		195E24051ABD391400962D34 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				195E24061ABD391400962D34 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		195E24141ABD391400962D34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		195E24151ABD391400962D34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		195E24171ABD391400962D34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = NosyPlanet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		195E24181ABD391400962D34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = NosyPlanet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		195E241A1ABD391400962D34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NosyPlanetTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NosyPlanet.app/NosyPlanet";
+			};
+			name = Debug;
+		};
+		195E241B1ABD391400962D34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NosyPlanetTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NosyPlanet.app/NosyPlanet";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		195E23F21ABD391400962D34 /* Build configuration list for PBXProject "NosyPlanet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				195E24141ABD391400962D34 /* Debug */,
+				195E24151ABD391400962D34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		195E24161ABD391400962D34 /* Build configuration list for PBXNativeTarget "NosyPlanet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				195E24171ABD391400962D34 /* Debug */,
+				195E24181ABD391400962D34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		195E24191ABD391400962D34 /* Build configuration list for PBXNativeTarget "NosyPlanetTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				195E241A1ABD391400962D34 /* Debug */,
+				195E241B1ABD391400962D34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 195E23EF1ABD391400962D34 /* Project object */;
+}
