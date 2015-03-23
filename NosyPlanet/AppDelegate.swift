@@ -7,15 +7,44 @@
 //
 
 import UIKit
+import Parse
+import Fabric
+import Crashlytics
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        configureNavController()
+        
+        Fabric.with([Crashlytics()])
+        
+        // Enable storing and querying data from Local Datastore.
+        // Remove this line if you don't want to use Local Datastore features or want to use cachePolicy.
+        Parse.enableLocalDatastore()
+        
+        // ****************************************************************************
+        // Uncomment this line if you want to enable Crash Reporting
+        // ParseCrashReporting.enable()
+        //
+        // Uncomment and fill in with your Parse credentials:
+        Parse.setApplicationId("FxptVkqZfYMgfZPrRn3m38EqDRtnfC0aZvVlE7f5", clientKey: "xFiDldaLOO2dHHBY84q7wmrKBTDVa9sxMYr8ypTa")
+        
+        PFUser.enableAutomaticUser()
+        
+        let defaultACL = PFACL();
+        
+        // If you would like all objects to be private by default, remove this line.
+        defaultACL.setPublicReadAccess(true)
+        
+        PFACL.setDefaultACL(defaultACL, withAccessForCurrentUser:true)
+
+        
         return true
     }
 
@@ -41,6 +70,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    func configureNavController() {
+//        UINavigationBar.appearance().setBackgroundImage(UIImage(), forBarMetrics: UIBarMetrics.Default)
+        UINavigationBar.appearance().shadowImage = UIImage()
+//        UINavigationBar.appearance().backgroundColor = UIColor(red: (25/255), green: (118/255), blue: (210/255), alpha: 1.0)
+        if let font = UIFont(name: "HelveticaNeue-Medium", size: 24) {
+            UINavigationBar.appearance().titleTextAttributes = [ NSFontAttributeName: font,  NSForegroundColorAttributeName: UIColor.whiteColor()]
+        }
+    }
 
 }
 

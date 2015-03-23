@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  QuestionViewController.swift
 //  QandA
 //
 //  Created by trvslhlt on 3/11/15.
@@ -9,36 +9,27 @@
 import UIKit
 import Parse
 
-class ViewController: UIViewController {
+class QuestionViewController: QRParentViewController {
 
     @IBOutlet weak var headerView: HeaderView!
     @IBOutlet weak var bodyView: BodyView!
-
-    
-    // Below 2 vars will be omitted once they can be determined with Parse.com, maybe in the same query to Result Parse class?
-    var resultOfYesterdayId: String = "SfjfegusPV" // This is the question objectId (referenced in the "answeredFor" column) of the result object. It's the result that is scheduled for display today
-    var todaysQuestionId: String = "SfjfegusPV" // To test result view, I've made todaysQuestionId same as resultOfYesterdayId
-//    var todaysQuestionId: String = "BPd15JqiPt"
-    
-    var viewToShow: String? // Determined by CheckForResponse method
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Run a model that syncronously checks for presence of result
-        CheckForResponse().responseIsPresent(self.todaysQuestionId, completionHandler: {(present: Bool) -> Void in
-            if present == true {
-                self.viewToShow = "Result"
-            } else if present == false {
-                self.viewToShow = "Question"
-            }
-            if let vts = self.viewToShow {
-                self.headerView.loadHeaderView(vts, todaysQuestionId: self.todaysQuestionId, resultOfYesterdayId: self.resultOfYesterdayId)
-                self.bodyView.loadBodyView(vts, todaysQuestionId: self.todaysQuestionId, resultOfYesterdayId: self.resultOfYesterdayId)
-            }
-        })
-                 // questionHeaderView.label.text = "What is this?"
+        self.navigationItem.title = "Latest Question"
+        self.navigationController?.navigationBar.barTintColor = UIColor(red: (25/255), green: (118/255), blue: (210/255), alpha: 1.0)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "methodOFReceivedNotication:", name:"didTapSubmitButton", object: nil)
+    }
     
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(true)
+        self.headerView.loadHeaderView("Question", todaysQuestionId: self.todaysQuestionId, resultOfYesterdayId: self.resultOfYesterdayId)
+        self.bodyView.loadBodyView("Question", todaysQuestionId: self.todaysQuestionId, resultOfYesterdayId: self.resultOfYesterdayId)
+    }
+    
+    func methodOFReceivedNotication(notification: NSNotification){
+//        self.viewToShow = "Result"
+        self.performSegueWithIdentifier("showResultVCLater", sender: self)
     }
     
 }

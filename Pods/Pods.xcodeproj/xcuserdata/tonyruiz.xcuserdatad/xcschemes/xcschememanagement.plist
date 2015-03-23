@@ -4,20 +4,25 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>KnowHumanity.xcscheme</key>
+		<key>Pods-SwiftyJSON.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>0</integer>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>195E23F61ABD391400962D34</key>
+		<key>0CD6E2A1A929EC2E0301C017</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>195E240B1ABD391400962D34</key>
+		<key>58859CBF5AC91535A9162BEF</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="0ZD-Zc-FYB">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Question View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="ParseStarterProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="questionVC" title="Question View Controller" id="vXZ-lx-hvc" customClass="QuestionViewController" customModule="KnowHumanity" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -18,37 +16,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="db6-rd-K6G" userLabel="Header View" customClass="HeaderView" customModule="ParseStarterProject" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="208"/>
-                                <color key="backgroundColor" red="0.7255641263" green="1" blue="0.46752339549999999" alpha="0.73999999999999999" colorSpace="calibratedRGB"/>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="erR-TZ-gSU" userLabel="Footer View">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="208" id="9Ub-p1-OsZ"/>
+                                    <constraint firstAttribute="height" id="Jfj-so-nLm"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jPn-WF-edI" userLabel="Body View">
-                                <rect key="frame" x="0.0" y="216" width="600" height="376"/>
+                                <rect key="frame" x="0.0" y="164" width="600" height="436"/>
                                 <subviews>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dBN-Cd-RIF">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="376"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="436"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oD8-on-48p" customClass="BodyView" customModule="ParseStarterProject" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oD8-on-48p" customClass="BodyView" customModule="KnowHumanity" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="600" height="1000"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1000" id="ABd-vF-8Qn"/>
+                                                    <constraint firstAttribute="height" constant="1000" id="n8t-BC-OK5"/>
                                                 </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="ABd-vF-8Qn"/>
+                                                    </mask>
+                                                </variation>
                                             </view>
                                         </subviews>
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="oD8-on-48p" secondAttribute="bottom" id="2KC-PM-lqS"/>
                                             <constraint firstItem="oD8-on-48p" firstAttribute="top" secondItem="dBN-Cd-RIF" secondAttribute="top" id="3FW-of-GV0"/>
+                                            <constraint firstItem="oD8-on-48p" firstAttribute="width" secondItem="dBN-Cd-RIF" secondAttribute="width" id="4vf-z0-DDW"/>
                                             <constraint firstItem="oD8-on-48p" firstAttribute="leading" secondItem="dBN-Cd-RIF" secondAttribute="leading" id="Xn1-k8-adq"/>
                                             <constraint firstAttribute="trailing" secondItem="oD8-on-48p" secondAttribute="trailing" id="xA9-oo-TbS"/>
                                             <constraint firstItem="oD8-on-48p" firstAttribute="width" secondItem="dBN-Cd-RIF" secondAttribute="width" id="xDO-eE-s8N"/>
                                         </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="xDO-eE-s8N"/>
+                                            </mask>
+                                        </variation>
                                     </scrollView>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="0.63599085769999997" blue="0.41497858209999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="dBN-Cd-RIF" firstAttribute="leading" secondItem="jPn-WF-edI" secondAttribute="leading" id="XYZ-O1-hdC"/>
                                     <constraint firstAttribute="trailing" secondItem="dBN-Cd-RIF" secondAttribute="trailing" id="gwU-kN-Wqf"/>
@@ -56,34 +63,169 @@
                                     <constraint firstAttribute="bottom" secondItem="dBN-Cd-RIF" secondAttribute="bottom" id="nj4-nD-oLG"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="erR-TZ-gSU" userLabel="Footer View">
-                                <color key="backgroundColor" red="0.7255641263" green="1" blue="0.46752339549999999" alpha="0.73999999999999999" colorSpace="calibratedRGB"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="db6-rd-K6G" userLabel="Header View" customClass="HeaderView" customModule="KnowHumanity" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="64" width="600" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" id="Jfj-so-nLm"/>
+                                    <constraint firstAttribute="height" constant="100" id="9Ub-p1-OsZ"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="jPn-WF-edI" firstAttribute="top" secondItem="db6-rd-K6G" secondAttribute="bottom" constant="8" id="1nA-iV-6re"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="erR-TZ-gSU" secondAttribute="trailing" constant="-16" id="3hY-h9-GSg"/>
-                            <constraint firstItem="db6-rd-K6G" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="-20" id="4cZ-3S-N48"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="db6-rd-K6G" secondAttribute="trailing" constant="-16" id="Chj-gz-3ov"/>
+                            <constraint firstItem="jPn-WF-edI" firstAttribute="top" secondItem="db6-rd-K6G" secondAttribute="bottom" id="1nA-iV-6re"/>
+                            <constraint firstAttribute="trailing" secondItem="erR-TZ-gSU" secondAttribute="trailing" id="3hY-h9-GSg"/>
+                            <constraint firstItem="db6-rd-K6G" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="4cZ-3S-N48"/>
+                            <constraint firstAttribute="trailing" secondItem="db6-rd-K6G" secondAttribute="trailing" id="Chj-gz-3ov"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="erR-TZ-gSU" secondAttribute="bottom" id="Fae-vO-d0R"/>
-                            <constraint firstItem="jPn-WF-edI" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="ZbI-xm-s5U"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="jPn-WF-edI" secondAttribute="trailing" constant="-16" id="aqA-Ru-pVt"/>
-                            <constraint firstItem="erR-TZ-gSU" firstAttribute="top" secondItem="jPn-WF-edI" secondAttribute="bottom" constant="8" id="cE3-Gs-Ua6"/>
-                            <constraint firstItem="erR-TZ-gSU" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="hpr-T4-LDe"/>
-                            <constraint firstItem="db6-rd-K6G" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="nnE-mJ-ZCc"/>
+                            <constraint firstItem="jPn-WF-edI" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="ZbI-xm-s5U"/>
+                            <constraint firstAttribute="trailing" secondItem="jPn-WF-edI" secondAttribute="trailing" id="aqA-Ru-pVt"/>
+                            <constraint firstItem="erR-TZ-gSU" firstAttribute="top" secondItem="jPn-WF-edI" secondAttribute="bottom" id="cE3-Gs-Ua6"/>
+                            <constraint firstItem="erR-TZ-gSU" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="hpr-T4-LDe"/>
+                            <constraint firstItem="db6-rd-K6G" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="nnE-mJ-ZCc"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="J96-yc-k0g"/>
                     <connections>
                         <outlet property="bodyView" destination="oD8-on-48p" id="CLu-sQ-SNl"/>
                         <outlet property="headerView" destination="db6-rd-K6G" id="Ws6-iy-V8Z"/>
+                        <segue destination="Thl-Yz-ISM" kind="show" identifier="showResultVCLater" id="iVd-59-DjR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1235" y="-82"/>
+        </scene>
+        <!--Initial View Controller-->
+        <scene sceneID="fnA-44-sZN">
+            <objects>
+                <viewController title="Main View Controller" id="IlN-zR-9Xt" userLabel="Initial View Controller" customClass="InitialViewController" customModule="KnowHumanity" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ocf-ns-faw"/>
+                        <viewControllerLayoutGuide type="bottom" id="Jmk-2j-k6W"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cQR-ld-isX">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="O48-7S-T5d"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="show" identifier="showQuestionVC" id="gmL-tq-XTT"/>
+                        <segue destination="Thl-Yz-ISM" kind="show" identifier="showResultVC" id="J1Z-VJ-zVs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2H7-pH-Xoc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="332" y="230"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Nf0-id-ob1">
+            <objects>
+                <navigationController id="0ZD-Zc-FYB" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="lb8-Jo-k4x">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="IlN-zR-9Xt" kind="relationship" relationship="rootViewController" id="Mo0-yb-wL2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YdG-U8-mtU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-334" y="230"/>
+        </scene>
+        <!--Result View Controller-->
+        <scene sceneID="TeK-z5-SAq">
+            <objects>
+                <viewController storyboardIdentifier="resultVC" title="Result View Controller" id="Thl-Yz-ISM" userLabel="Result View Controller" customClass="ResultViewController" customModule="KnowHumanity" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Xi9-dd-hhF"/>
+                        <viewControllerLayoutGuide type="bottom" id="IMr-Pi-IKU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="81e-mY-FF8">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SIq-Fp-K56" userLabel="Footer View">
+                                <constraints>
+                                    <constraint firstAttribute="height" id="MJj-WG-XI2"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nYI-Ci-Ol9" userLabel="Body View">
+                                <rect key="frame" x="0.0" y="164" width="600" height="436"/>
+                                <subviews>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z5R-07-55b">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="436"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Cw-Xd-Afa" customClass="BodyView" customModule="KnowHumanity" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="600" height="1000"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1000" id="TeW-fd-MUT"/>
+                                                    <constraint firstAttribute="height" constant="1000" id="lIh-lS-xrU"/>
+                                                </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="TeW-fd-MUT"/>
+                                                    </mask>
+                                                </variation>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="0Cw-Xd-Afa" secondAttribute="trailing" id="MqQ-kT-Smp"/>
+                                            <constraint firstItem="0Cw-Xd-Afa" firstAttribute="top" secondItem="Z5R-07-55b" secondAttribute="top" id="Vv4-Wr-Ll8"/>
+                                            <constraint firstItem="0Cw-Xd-Afa" firstAttribute="width" secondItem="Z5R-07-55b" secondAttribute="width" id="alm-h6-jmk"/>
+                                            <constraint firstItem="0Cw-Xd-Afa" firstAttribute="leading" secondItem="Z5R-07-55b" secondAttribute="leading" id="ifN-AO-KSv"/>
+                                            <constraint firstAttribute="bottom" secondItem="0Cw-Xd-Afa" secondAttribute="bottom" id="oFX-hw-FeH"/>
+                                            <constraint firstItem="0Cw-Xd-Afa" firstAttribute="width" secondItem="Z5R-07-55b" secondAttribute="width" id="zBg-ir-kAd"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="zBg-ir-kAd"/>
+                                            </mask>
+                                        </variation>
+                                    </scrollView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Z5R-07-55b" firstAttribute="top" secondItem="nYI-Ci-Ol9" secondAttribute="top" id="3dq-Ej-D7B"/>
+                                    <constraint firstItem="Z5R-07-55b" firstAttribute="leading" secondItem="nYI-Ci-Ol9" secondAttribute="leading" id="C8t-iz-aAp"/>
+                                    <constraint firstAttribute="trailing" secondItem="Z5R-07-55b" secondAttribute="trailing" id="HO0-Ys-bl4"/>
+                                    <constraint firstAttribute="bottom" secondItem="Z5R-07-55b" secondAttribute="bottom" id="VRj-Dz-N0f"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pSv-oe-HfR" userLabel="Header View" customClass="HeaderView" customModule="KnowHumanity" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="64" width="600" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Lw1-wc-jwJ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="IMr-Pi-IKU" firstAttribute="top" secondItem="SIq-Fp-K56" secondAttribute="bottom" id="NBn-Xb-nM0"/>
+                            <constraint firstAttribute="trailing" secondItem="pSv-oe-HfR" secondAttribute="trailing" id="R4h-ao-ULs"/>
+                            <constraint firstItem="nYI-Ci-Ol9" firstAttribute="top" secondItem="pSv-oe-HfR" secondAttribute="bottom" id="Xxk-Ic-aWB"/>
+                            <constraint firstItem="pSv-oe-HfR" firstAttribute="top" secondItem="Xi9-dd-hhF" secondAttribute="bottom" id="cd7-4v-Bwy"/>
+                            <constraint firstItem="pSv-oe-HfR" firstAttribute="leading" secondItem="81e-mY-FF8" secondAttribute="leading" id="cfk-FA-Sdz"/>
+                            <constraint firstAttribute="trailing" secondItem="SIq-Fp-K56" secondAttribute="trailing" id="gbQ-01-xSU"/>
+                            <constraint firstItem="nYI-Ci-Ol9" firstAttribute="leading" secondItem="81e-mY-FF8" secondAttribute="leading" id="og1-xK-GPt"/>
+                            <constraint firstItem="SIq-Fp-K56" firstAttribute="top" secondItem="nYI-Ci-Ol9" secondAttribute="bottom" id="pYz-NF-Qpt"/>
+                            <constraint firstItem="SIq-Fp-K56" firstAttribute="leading" secondItem="81e-mY-FF8" secondAttribute="leading" id="wwu-PS-LOp"/>
+                            <constraint firstAttribute="trailing" secondItem="nYI-Ci-Ol9" secondAttribute="trailing" id="zvv-u3-xbA"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="UqU-3x-bd9"/>
+                    <connections>
+                        <outlet property="bodyView" destination="0Cw-Xd-Afa" id="Ke8-hD-NbW"/>
+                        <outlet property="headerView" destination="pSv-oe-HfR" id="tm3-kR-PpN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gNQ-eB-fy0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1235" y="616"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="iVd-59-DjR"/>
+    </inferredMetricsTieBreakers>
 </document>
