@@ -40,6 +40,7 @@
 		195E24561ABD3DA200962D34 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 195E24541ABD3DA200962D34 /* Crashlytics.framework */; };
 		195E24571ABD3DA200962D34 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 195E24551ABD3DA200962D34 /* Fabric.framework */; };
 		195E24591ABD3E6B00962D34 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 195E24581ABD3E6B00962D34 /* Podfile */; };
+		195EBBD91AC0C894004E193A /* CreateResponseObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195EBBD81AC0C894004E193A /* CreateResponseObject.swift */; };
 		19639A451AC08D5800580B83 /* know_humanity_text.png in Resources */ = {isa = PBXBuildFile; fileRef = 19639A441AC08D5800580B83 /* know_humanity_text.png */; };
 		19639A471AC0965D00580B83 /* launchscreenbg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 19639A461AC0965D00580B83 /* launchscreenbg.jpg */; };
 		196F0C481ABF0D850011E4B9 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196F0C471ABF0D850011E4B9 /* InitialViewController.swift */; };
@@ -100,6 +101,7 @@
 		195E24541ABD3DA200962D34 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		195E24551ABD3DA200962D34 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		195E24581ABD3E6B00962D34 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		195EBBD81AC0C894004E193A /* CreateResponseObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateResponseObject.swift; sourceTree = "<group>"; };
 		19639A441AC08D5800580B83 /* know_humanity_text.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = know_humanity_text.png; sourceTree = "<group>"; };
 		19639A461AC0965D00580B83 /* launchscreenbg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = launchscreenbg.jpg; sourceTree = "<group>"; };
 		196F0C471ABF0D850011E4B9 /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
@@ -267,6 +269,7 @@
 		196F0C4D1ABF1DA10011E4B9 /* Methods */ = {
 			isa = PBXGroup;
 			children = (
+				195EBBD81AC0C894004E193A /* CreateResponseObject.swift */,
 				195E24201ABD397E00962D34 /* CreateResultObject.swift */,
 				195E24211ABD397E00962D34 /* CheckForResponse.swift */,
 				195E24221ABD397E00962D34 /* RetrieveTodaysQuestion.swift */,
@@ -477,6 +480,7 @@
 				195E23FD1ABD391400962D34 /* AppDelegate.swift in Sources */,
 				196F0C511ABF1EAA0011E4B9 /* ResultViewController.swift in Sources */,
 				195E24361ABD39B200962D34 /* UIKitextensions.swift in Sources */,
+				195EBBD91AC0C894004E193A /* CreateResponseObject.swift in Sources */,
 				195E24261ABD397E00962D34 /* RetrieveTodaysQuestion.swift in Sources */,
 				195E24241ABD397E00962D34 /* CreateResultObject.swift in Sources */,
 				195E242B1ABD399200962D34 /* HeaderView.swift in Sources */,

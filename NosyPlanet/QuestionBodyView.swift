@@ -16,6 +16,8 @@ class QuestionBodyView: BodyView {
     var bYCenter = NSLayoutConstraint()
     var bXFirstButton = NSLayoutConstraint()
     var bXSecondButton = NSLayoutConstraint()
+    // just added
+    var todaysQuestionId = String()
     
     @IBOutlet weak var firstAnswerButton: UIButton!
     @IBOutlet weak var secondAnswerButton: UIButton!
@@ -32,6 +34,9 @@ class QuestionBodyView: BodyView {
         initiateHoverBox("firstAnswer")
         if let t = firstAnswerButton.titleLabel?.text {
             self.answerSelected = t
+            
+            // just added
+            CreateResponseObject().submit(todaysQuestionId, answer: t)
         }
         self.submitButton.hidden = false
     }
@@ -41,6 +46,9 @@ class QuestionBodyView: BodyView {
         initiateHoverBox("secondAnswer")
         if let t = secondAnswerButton.titleLabel?.text {
             self.answerSelected = t
+            
+            // just added
+            CreateResponseObject().submit(todaysQuestionId, answer: t)
         }
         self.submitButton.hidden = false
     }

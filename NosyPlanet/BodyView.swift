@@ -23,6 +23,9 @@ class BodyView: UIView {
                     q.secondAnswerButton.setTitle(secondAnswerTitle, forState: UIControlState.Normal)
                     self.addSubview(q)
                     q.pinToSuperviewEdgesWithInsets(UIEdgeInsetsZero)
+                    
+                    // just added
+                    q.todaysQuestionId = todaysQuestionId
                 }
             })
         
